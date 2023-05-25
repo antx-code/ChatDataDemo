@@ -1,0 +1,29 @@
+openai:
+  api_key: sk-xxxxxxxxxxxxxxxxxxxxxxxx
+  chat_model: gpt-3.5-turbo
+  embedding_model: text-embedding-ada-002
+  other_model: text-davinci-003
+  temperature: 0
+  proxy: http://127.0.0.1:7890
+
+llama:
+  max_input_size: 4096
+  num_outputs: 500
+  max_chunk_overlap: 20
+  chunk_size_limit: 600
+
+langchain:
+  max_history: 5
+  ctx_length: 2
+  max_token: 500
+  similarity_search_k: 3
+  chain_type: stuff
+
+work_dir: docs
+
+qdrant:
+  host: 127.0.0.1
+  port: 6333
+  url: https://xxx.qdrant.io
+  api_key: your_qdrant_api_key
+  collection_name: chatdatas
